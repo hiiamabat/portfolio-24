@@ -1,0 +1,583 @@
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  background-color: #f1e3d5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAV */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
+
+.navbar .nav {
+  display: flex;
+  font-size: 18px;
+  margin: 0;
+  justify-content: space-around;
+  padding: 10px;
+  transition: all 0.5s;
+  background-color: rgba(103, 140, 140, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(9px);
+}
+
+.navbar .nav li {
+  list-style: none;
+  padding: 20px;
+}
+
+.navbar .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:active {
+  border-bottom: 2px solid white;
+  transition: all 1s ease;
+}
+
+/* COOL JUNGLE */
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.background,
+.background-2,
+.foreground,
+.foreground-2,
+.logo {
+  position: absolute;
+  /* height: 100%;
+  width: 100vw;
+  object-fit: cover; */
+}
+
+.background {
+  transform: translateZ(-20px) scale(3);
+}
+
+.background-2 {
+  transform: translateZ(-15px) scale(2.5);
+  top: -110em;
+}
+
+.foreground {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground-2 {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.logo {
+  width: 100%;
+  top: 15em;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.labels {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.titles {
+  font-size: 1.2rem;
+}
+
+.icon {
+  max-width: 60px;
+}
+
+/* LAYOUT */
+
+.container {
+  width: 100%;
+  max-width: 1900px;
+  margin: auto;
+}
+
+/* HOMEPAGE */
+
+.intro {
+  margin-top: 18em;
+  display: flex;
+  position: relative;
+  z-index: 110;
+  width: 100%;
+}
+
+.intro-container {
+  margin-top: 13em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em 3em 1em;
+}
+
+.intro__slogan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 200;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.intro__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.blurb {
+  text-align: center;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/images/topfog1.png");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  left: 0px;
+  z-index: -1;
+}
+
+/* PORTFOLIO */
+
+.portfolio__picture {
+  z-index: 120;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-color: #f1e3d5;
+}
+
+.portfolio__content {
+  background-color: #f1e3d5;
+  width: 100%;
+  z-index: 120;
+  padding: 1em 1em 3em 1em;
+  text-align: center;
+}
+
+.labels {
+  font-size: 1rem;
+  padding: 0.5em;
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 600;
+  padding: 0.5em;
+  letter-spacing: 1px;
+}
+
+.desc {
+  padding: 0.5em;
+}
+
+.cta-container {
+  padding: 2em 0.5em 0.5em 0.5em;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: lowercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #000;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  z-index: 130;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(138, 189, 189, 0.3);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.two-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  background-image: url("/assets/images/project1.png");
+}
+
+.second {
+  background-image: url("/assets/images/project2.png");
+}
+
+.third {
+  background-image: url("/assets/images/project3.png");
+}
+
+/* EXAMPLES */
+
+.examples__image {
+  width: 100%;
+  z-index: 120;
+  position: relative;
+  background-color: #f1e3d5;
+  padding: 2em 1em 3em 1em;
+}
+
+/* HOME-CONNECT */
+
+.home-connect {
+  padding: 0 1em 3em 1em;
+  width: 100%;
+  z-index: 120;
+  position: relative;
+  background-color: #f1e3d5;
+  text-align: center;
+}
+
+.drop-me-link {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #e2d3c7;
+  height: 80px;
+  z-index: 130;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ABOUT PAGE */
+
+.about-background,
+.about-background-2,
+.about-foreground,
+.about-foreground-2 {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.about-background {
+  transform: translateZ(-20px) scale(3);
+}
+
+.about-background-2 {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.about-foreground {
+  transform: translateZ(-10px) scale(2);
+}
+
+.about-foreground-2 {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  background-color: #f1e2d5;
+}
+
+.about {
+  margin-top: 1300px;
+  position: relative;
+  z-index: 130;
+  padding: 30px;
+  background-color: #f1e2d5;
+  box-sizing: border-box;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  background-image: url("images/topfog3.png");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 817px;
+  top: -314px;
+  left: 0px;
+  z-index: -1;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.about .left-col {
+  background-image: url(images/aboutblurb.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.about .right-col img {
+  width: 90%;
+}
+
+.recs {
+  position: relative;
+}
+
+.recs-title {
+  position: absolute;
+  top: -50px;
+  left: 449px;
+  opacity: 0.2;
+}
+
+.recs .left-col,
+.recs .right-col {
+  height: 400px;
+  background-size: cover;
+  margin: 20px;
+  text-align: center;
+}
+
+.recs .left-col {
+  background-image: url(images/1.jpg);
+}
+
+.recs .right-col {
+  background-image: url(images/2.jpg);
+}
+
+/* CONNECT PAGE */
+
+.connect-background,
+.connect-background-2 {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.connect-background {
+  transform: translateZ(-20px) scale(3);
+}
+
+.connect-background-2 {
+  transform: translateZ(-10px) scale(2);
+}
+
+.connect {
+  margin-top: 1300px;
+  position: relative;
+  z-index: 130;
+  padding: 30px;
+  background-color: #f1e2d5;
+  box-sizing: border-box;
+}
+
+.connect::before {
+  content: "";
+  position: absolute;
+  background-image: url("images/topfog1.png");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 820px;
+  top: -314px;
+  left: 0px;
+  z-index: -1;
+}
+
+.connect-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-image: url(images/connectbg.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: top;
+  display: flex;
+}
+
+.connect .card-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.connect .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 33%;
+  cursor: pointer;
+}
+
+.connect .card img {
+  transition: all 0.8s ease;
+}
+
+.connect .card img:hover {
+  transition: all 0.8s ease;
+  transform: translateY(-20px);
+}
+
+.connect .card h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.connect .card h3:hover {
+  color: #678c85;
+  transition: all 0.4s ease;
+}
+
+.connect .email-copy {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.connect .email-icon {
+  display: flex;
+}
+
+#email-text:hover {
+  transition: all 0.8s ease;
+  color: #678c85;
+}
+
+.connect .copy-email img {
+  width: 25px;
+  padding: 10px;
+}
+
+.connect .copy-email img:hover {
+  transition: all 0.8s ease;
+  color: #678c85;
+  transform: none;
+}
+
+.connect .card {
+  margin: 20px;
+}
+
+/* FOCO PORTFOLIO PIECE PAGE */
+
+.foco .foco-hero {
+  width: 100%;
+  background-image: url(images/focohero.jpg);
+  background-size: cover;
+  height: 1200px;
+}
+
+.foco .foco-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1200px;
+}
+
+.foco-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+.foco .left-col {
+  align-items: flex-start;
+}
+
+.foco .right-col {
+  align-items: center;
+}
+
+.foco .right-col img {
+  margin-top: 100px;
+  width: 50%;
+  align-items: center;
+  display: flex;
+}
