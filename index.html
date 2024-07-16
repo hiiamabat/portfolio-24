@@ -3,100 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="image" href="images/junglebg.png" />
-    <link rel="preload" as="image" href="images/junglebg1.png" />
-    <link rel="preload" as="image" href="images/junglebg2.png" />
+    <link rel="preload" as="image" href="/assets/images/junglebg.png" />
+    <link rel="preload" as="image" href="/assets/images/junglebg1.png" />
+    <link rel="preload" as="image" href="/assets/images/junglebg2.png" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="images/favicons/apple-touch-icon-57x57.png"
+      href="/assets/images/favicons/apple-touch-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="images/favicons/apple-touch-icon-114x114.png"
+      href="/assets/images/favicons/apple-touch-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="images/favicons/apple-touch-icon-72x72.png"
+      href="/assets/images/favicons/apple-touch-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="images/favicons/apple-touch-icon-144x144.png"
+      href="/assets/images/favicons/apple-touch-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="images/favicons/apple-touch-icon-60x60.png"
+      href="/assets/images/favicons/apple-touch-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="images/favicons/apple-touch-icon-120x120.png"
+      href="/assets/images/favicons/apple-touch-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="images/favicons/apple-touch-icon-76x76.png"
+      href="/assets/images/favicons/apple-touch-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="images/favicons/apple-touch-icon-152x152.png"
+      href="/assets/images/favicons/apple-touch-icon-152x152.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="196x196"
-      href="images/favicons/favicon-196x196.png"
+      href="/assets/images/favicons/favicon-196x196.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="images/favicons/favicon-96x96.png"
+      href="/assets/images/favicons/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicons/favicon-32x32.png"
+      href="/assets/images/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicons/favicon-16x16.png"
+      href="/assets/images/favicons/favicon-16x16.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="128x128"
-      href="images/favicons/favicon-128.png"
+      href="/assets/images/favicons/favicon-128.png"
     />
     <meta name="application-name" content="&nbsp;" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta
       name="msapplication-TileImage"
-      content="images/favicons/mstile-144x144.png"
+      content="/assets/images/favicons/mstile-144x144.png"
     />
     <meta
       name="msapplication-square70x70logo"
-      content="images/favicons/mstile-70x70.png"
+      content="/assets/images/favicons/mstile-70x70.png"
     />
     <meta
       name="msapplication-square150x150logo"
-      content="images/favicons/mstile-150x150.png"
+      content="/assets/images/favicons/mstile-150x150.png"
     />
     <meta
       name="msapplication-wide310x150logo"
-      content="images/favicons/mstile-310x150.png"
+      content="/assets/images/favicons/mstile-310x150.png"
     />
     <meta
       name="msapplication-square310x310logo"
-      content="images/favicons/mstile-310x310.png"
+      content="/assets/images/favicons/mstile-310x310.png"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -107,7 +107,7 @@
     />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Rachel Tschanz - Creative Frontend Developer</title>
+    <title>Rachel Tschanz-Designer/Developer</title>
   </head>
   <body>
     <header>
@@ -125,18 +125,17 @@
       <img src="/assets/images/junglebg2.png" class="foreground" alt="" />
 
       <picture>
-        <source srcset="/assets/images/mobile-logo.png" />
         <source
-          media="(min-width: 768px)"
-          srcset="images/junglelogo-small.png"
+          media="(max-width: 600px)"
+          srcset="/assets/images/mobile-logo.png"
         />
 
-        <source media="(min-width: 1024px)" srcset="images/junglelogo.png" />
+        <source srcset="/assets/images/junglelogo.png" />
 
         <img
-          src="/assets/images/mobile-logo.png"
-          class="logo"
+          src="/assets/images/junglelogo.png"
           alt="Rachel Tschanz - Designer/Developer"
+          class="logo"
         />
       </picture>
 
@@ -178,9 +177,21 @@
         <section class="portfolio-item-1">
           <div class="container two-col">
             <div class="portfolio__picture first">
-              <img src="/assets/images/realfog2.png" class="fog-1" alt="" />
-              <img src="/assets/images/fogcloud1.png" class="cloud-1" alt="" />
-              <img src="/assets/images/fogcloud2.png" class="cloud-2" alt="" />
+              <img
+                src="/assets/images/fog-port.png"
+                class="fog"
+                alt="Realistic fog over image of devices showing website"
+              />
+              <img
+                src="/assets/images/fogcloud1.png"
+                class="cloud first-cloud-1"
+                alt="Stylized pixelated cloud illustration"
+              />
+              <img
+                src="/assets/images/fogcloud2.png"
+                class="cloud first-cloud-2"
+                alt="Stylized pixelated cloud illustration"
+              />
             </div>
             <div class="portfolio__content">
               <img
@@ -214,9 +225,21 @@
         <section class="portfolio-item-2">
           <div class="container two-col">
             <div class="portfolio__picture second">
-              <img src="/assets/images/realfog2.png" class="fog-1" alt="" />
-              <img src="/assets/images/fogcloud3.png" class="cloud-1" alt="" />
-              <img src="/assets/images/fogcloud4.png" class="cloud-2" alt="" />
+              <img
+                src="/assets/images/fog-port.png"
+                class="fog"
+                alt="Realistic fog over image of devices showing website"
+              />
+              <img
+                src="/assets/images/fogcloud3.png"
+                class="cloud second-cloud-1"
+                alt="Stylized pixelated cloud illustration"
+              />
+              <img
+                src="/assets/images/fogcloud4.png"
+                class="cloud second-cloud-2"
+                alt="Stylized pixelated cloud illustration"
+              />
             </div>
             <div class="portfolio__content">
               <img
@@ -224,7 +247,7 @@
                 class="icon"
                 alt="Tree Icon"
               />
-              <h4 class="labels">Branding • UX/UI Design</h4>
+              <h4 class="labels">branding • ux/ui design</h4>
               <h3 class="title">Zenly Meditation App</h3>
               <p class="desc">
                 Case study for Zenly, an app I created for the Google UX design
@@ -233,9 +256,9 @@
 
               <div class="cta-container">
                 <a
-                  href="/images/Zenly Case Study.pdf"
+                  href="/assets/images/Zenly Case Study.pdf"
                   target="_blank"
-                  class="cta"
+                  class="cta second-cta"
                 >
                   <span>case study</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -251,9 +274,21 @@
         <section class="portfolio-item-3">
           <div class="container two-col">
             <div class="portfolio__picture third">
-              <img src="/assets/images/realfog2.png" class="fog-1" alt="" />
-              <img src="/assets/images/fogcloud5.png" class="cloud-1" alt="" />
-              <img src="/assets/images/fogcloud6.png" class="cloud-2" alt="" />
+              <img
+                src="/assets/images/fog-port.png"
+                class="fog"
+                alt="Realistic fog over image of devices showing website"
+              />
+              <img
+                src="/assets/images/fogcloud5.png"
+                class="cloud third-cloud-1"
+                alt=""
+              />
+              <img
+                src="/assets/images/fogcloud6.png"
+                class="cloud third-cloud-2"
+                alt=""
+              />
             </div>
             <div class="portfolio__content">
               <img
@@ -261,7 +296,7 @@
                 class="icon"
                 alt="Frog Icon"
               />
-              <h4 class="labels">Branding • UX/UI Design • Development</h4>
+              <h4 class="labels">branding • ux/ui design • development</h4>
               <h3 class="title">Bullseye Live Site</h3>
               <p class="desc">
                 Responsive live web design promoting a fictional finance/payment
@@ -272,7 +307,7 @@
                 <a
                   href="https://bullseye.raedesign.org/"
                   target="_blank"
-                  class="cta"
+                  class="cta third-cta"
                 >
                   <span>live site</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">

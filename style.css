@@ -71,9 +71,6 @@ a {
 .foreground-2,
 .logo {
   position: absolute;
-  /* height: 100%;
-  width: 100vw;
-  object-fit: cover; */
 }
 
 .background {
@@ -114,6 +111,7 @@ h3 {
 
 .icon {
   max-width: 60px;
+  z-index: 150;
 }
 
 /* LAYOUT */
@@ -182,7 +180,7 @@ h3 {
 
 .portfolio__picture {
   z-index: 120;
-  background-position: top;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
@@ -194,7 +192,7 @@ h3 {
 .portfolio__content {
   background-color: #f1e3d5;
   width: 100%;
-  z-index: 120;
+  z-index: 110;
   padding: 1em 1em 3em 1em;
   text-align: center;
 }
@@ -214,6 +212,8 @@ h3 {
 .desc {
   padding: 0.5em;
 }
+
+/* CTA */
 
 .cta-container {
   padding: 2em 0.5em 0.5em 0.5em;
@@ -263,6 +263,35 @@ h3 {
   transition: all 0.3s ease;
 }
 
+.cta:hover:before {
+  width: 100%;
+  background: rgb(138, 189, 189);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.9);
+}
+
+.second-cta:hover:before {
+  background: rgb(150, 201, 191);
+}
+
+.third-cta:hover:before {
+  background: rgb(147, 200, 168);
+}
+
+.second-cta:before {
+  background: rgba(150, 201, 191, 0.3);
+}
+
+.third-cta:before {
+  background: rgba(147, 200, 168, 0.3);
+}
+
 .two-col {
   display: flex;
   flex-direction: column;
@@ -278,6 +307,62 @@ h3 {
 
 .third {
   background-image: url("/assets/images/project3.png");
+}
+
+/* CLOUDS AND FOG */
+
+.fog {
+  display: none;
+}
+/* .fog {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  transition: all 1s ease;
+} */
+
+.fog:hover {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  transition: all 1s ease;
+  z-index: 150;
+}
+
+.first-cloud-1 {
+  top: -60px;
+  left: -80px;
+}
+
+.first-cloud-2 {
+  top: 240px;
+  left: 180px;
+}
+
+.second-cloud-1 {
+  top: -65px;
+  left: 170px;
+}
+
+.second-cloud-2 {
+  top: 250px;
+  left: -50px;
+}
+
+.third-cloud-1 {
+  top: -60px;
+  left: -80px;
+}
+
+.third-cloud-2 {
+  top: 240px;
+  left: 180px;
 }
 
 /* EXAMPLES */
@@ -301,6 +386,27 @@ h3 {
   text-align: center;
 }
 
+.drop-cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+
+.drop-cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #000;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  z-index: 130;
+}
+
 .drop-me-link {
   font-weight: 200;
   letter-spacing: 1px;
@@ -317,6 +423,76 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 400px) {
+  .first-cloud-2 {
+    top: 240px;
+    left: 300px;
+  }
+
+  .second-cloud-1 {
+    top: -65px;
+    left: 270px;
+  }
+
+  .third-cloud-2 {
+    top: 240px;
+    left: 300px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .cloud {
+    width: 250px;
+  }
+
+  .first-cloud-1 {
+    top: -90px;
+    left: -70px;
+  }
+
+  .second-cloud-1 {
+    top: -90px;
+    left: 330px;
+  }
+
+  .third-cloud-1 {
+    top: -90px;
+    left: -30px;
+  }
+
+  .third-cloud-2 {
+    top: 240px;
+    left: 320px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .background,
+  .background-2,
+  .foreground,
+  .foreground-2,
+  .logo {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .background-2 {
+    top: 0;
+  }
+
+  .logo {
+    transform: translateZ(-15px) scale(1);
+    top: 0;
+  }
+
+  .intro {
+    margin-top: 55em;
+  }
 }
 
 /* ABOUT PAGE */
@@ -543,41 +719,4 @@ h3 {
 
 .connect .card {
   margin: 20px;
-}
-
-/* FOCO PORTFOLIO PIECE PAGE */
-
-.foco .foco-hero {
-  width: 100%;
-  background-image: url(images/focohero.jpg);
-  background-size: cover;
-  height: 1200px;
-}
-
-.foco .foco-hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1200px;
-}
-
-.foco-container {
-  max-width: 1500px;
-  width: 100%;
-  margin: auto;
-}
-
-.foco .left-col {
-  align-items: flex-start;
-}
-
-.foco .right-col {
-  align-items: center;
-}
-
-.foco .right-col img {
-  margin-top: 100px;
-  width: 50%;
-  align-items: center;
-  display: flex;
 }
