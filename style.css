@@ -1180,3 +1180,9 @@ h3 {
     margin-left: 1em;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .connect:before {
+    top: -310px;
+  }
+}
