@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -98,7 +98,6 @@
       name="msapplication-square310x310logo"
       content="/assets/images/favicons/mstile-310x310.png"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -107,7 +106,7 @@
     />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Rachel Tschanz-Designer/Developer</title>
+    <title>Rachel Tschanz - Designer/Developer</title>
   </head>
   <body>
     <header>
@@ -120,18 +119,28 @@
       </nav>
     </header>
     <div class="wrapper">
-      <img src="/assets/images/junglebg.png" class="background" alt="" />
-      <img src="/assets/images/junglebg1.png" class="background-2" alt="" />
-      <img src="/assets/images/junglebg2.png" class="foreground" alt="" />
+      <img
+        src="/assets/images/junglebg.png"
+        class="background"
+        alt="Jungle with dense foilage and flowers and a waterfall"
+      />
+      <img
+        src="/assets/images/junglebg1.png"
+        class="background-2"
+        alt="Jungle with dense foilage and flowers and a waterfall"
+      />
+      <img
+        src="/assets/images/junglebg2.png"
+        class="foreground"
+        alt="Jungle with dense foilage and flowers and a waterfall"
+      />
 
       <picture>
         <source
           media="(max-width: 600px)"
           srcset="/assets/images/mobile-logo.png"
         />
-
         <source srcset="/assets/images/junglelogo.png" />
-
         <img
           src="/assets/images/junglelogo.png"
           alt="Rachel Tschanz - Designer/Developer"
@@ -140,9 +149,9 @@
       </picture>
 
       <main>
-        <section class="intro">
+        <section class="intro" aria-labelledby="intro-heading">
           <div class="container intro-container">
-            <div class="intro__slogan">
+            <h1 id="intro-heading" class="intro__heading">
               bridging
               <img
                 src="/assets/images/icon1.png"
@@ -154,8 +163,7 @@
                 alt="icon of a mouse pointer"
               />
               digital worlds
-            </div>
-
+            </h1>
             <div class="intro__content">
               <div class="blurb">
                 <p>
@@ -174,7 +182,7 @@
           </div>
         </section>
 
-        <section class="portfolio-item-1">
+        <section class="portfolio-item-1" aria-labelledby="portfolio1-heading">
           <div class="container two-col">
             <div class="portfolio__picture first">
               <img
@@ -200,7 +208,7 @@
                 alt="Snake Icon"
               />
               <h4 class="labels">branding • ux/ui design</h4>
-              <h3 class="title">foco animal shelter</h3>
+              <h3 id="portfolio1-heading" class="title">foco animal shelter</h3>
               <p class="desc">
                 This is a case study for a hypothetical local animal shelter
                 website I did for Google's UX certificate.
@@ -211,7 +219,7 @@
                   target="_blank"
                   class="cta"
                 >
-                  <span>case study</span>
+                  <span>Case Study</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -222,7 +230,7 @@
           </div>
         </section>
 
-        <section class="portfolio-item-2">
+        <section class="portfolio-item-2" aria-labelledby="portfolio2-heading">
           <div class="container two-col">
             <div class="portfolio__picture second">
               <img
@@ -248,19 +256,20 @@
                 alt="Tree Icon"
               />
               <h4 class="labels">branding • ux/ui design</h4>
-              <h3 class="title">zenly meditation app</h3>
+              <h3 id="portfolio2-heading" class="title">
+                zenly meditation app
+              </h3>
               <p class="desc">
                 Case study for Zenly, an app I created for the Google UX design
                 certificate.
               </p>
-
               <div class="cta-container">
                 <a
                   href="/assets/images/Zenly Case Study.pdf"
                   target="_blank"
                   class="cta second-cta"
                 >
-                  <span>case study</span>
+                  <span>Case Study</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -271,7 +280,7 @@
           </div>
         </section>
 
-        <section class="portfolio-item-3">
+        <section class="portfolio-item-3" aria-labelledby="portfolio3-heading">
           <div class="container two-col">
             <div class="portfolio__picture third">
               <img
@@ -282,12 +291,12 @@
               <img
                 src="/assets/images/fogcloud5.png"
                 class="cloud third-cloud-1"
-                alt=""
+                alt="Stylized pixelated cloud illustration"
               />
               <img
                 src="/assets/images/fogcloud6.png"
                 class="cloud third-cloud-2"
-                alt=""
+                alt="Stylized pixelated cloud illustration"
               />
             </div>
             <div class="portfolio__content">
@@ -297,19 +306,18 @@
                 alt="Frog Icon"
               />
               <h4 class="labels">branding • ux/ui design • development</h4>
-              <h3 class="title">bullseye live site</h3>
+              <h3 id="portfolio3-heading" class="title">bullseye live site</h3>
               <p class="desc">
                 Responsive live web design promoting a fictional finance/payment
                 app.
               </p>
-
               <div class="cta-container">
                 <a
                   href="https://bullseye.raedesign.org/"
                   target="_blank"
                   class="cta third-cta"
                 >
-                  <span>live site</span>
+                  <span>Live Site</span>
                   <svg width="13px" height="10px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -320,7 +328,10 @@
           </div>
         </section>
 
-        <section class="examples">
+        <section class="examples" aria-labelledby="examples-heading">
+          <h2 id="examples-heading" class="visually-hidden">
+            Examples of My Work
+          </h2>
           <img
             class="examples__image"
             src="/assets/images/EXAMPLES.jpg"
@@ -328,10 +339,12 @@
           />
         </section>
 
-        <section class="home-connect">
-          <div class="container">
+        <section class="home-connect" aria-labelledby="connect-heading">
+          <div class="container home-connect-container">
             <a href="/connect.html" class="drop-cta">
-              <span class="drop-me-link">drop me a line</span>
+              <span id="connect-heading" class="drop-me-link"
+                >drop me a line</span
+              >
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
@@ -341,7 +354,7 @@
         </section>
 
         <footer>
-          <div class="footer">
+          <div class="footer" role="contentinfo">
             <span>2024© Rachel Tschanz</span>
           </div>
         </footer>
