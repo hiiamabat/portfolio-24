@@ -193,6 +193,15 @@ h3 {
 
 /* PORTFOLIO */
 
+.portfolio-item-1,
+.portfolio-item-2,
+.portfolio-item-3 {
+  background-color: #f1e3d5;
+  display: flex;
+  z-index: 110;
+  position: relative;
+}
+
 .portfolio__picture {
   z-index: 120;
   background-position: center;
@@ -387,6 +396,12 @@ h3 {
 }
 
 /* EXAMPLES */
+
+.examples {
+  background-color: #f1e3d5;
+  z-index: 110;
+  position: relative;
+}
 
 .examples__image {
   width: 100%;
@@ -837,6 +852,8 @@ h3 {
 
 .recs {
   background-color: #f1e2d5;
+  position: relative;
+  z-index: 110;
 }
 
 .recs__title {
