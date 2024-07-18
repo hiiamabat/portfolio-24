@@ -892,7 +892,7 @@ h3 {
 
 @media screen and (min-width: 700px) {
   .about-background {
-    content: url("/assets/images/mobileaboutbg.png");
+    content: url("/assets/images/smallestaboutbg.png");
   }
 
   .about {
